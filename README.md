@@ -2,26 +2,14 @@
 
 ## Overview
 
-This repository supports Leviton’s implementation and documentation of the MantisHub platform, including:
+This repository supports Leviton’s MantisHub implementation, including:
 
-* Source Integration (GitHub ↔ MantisHub)
-* Workflow configuration
-* Project structure
-* Documentation and governance
-* Integration validation
+- GitHub ↔ MantisHub Source Integration
+- Workflow documentation
+- Governance and process documentation
+- Change traceability validation
 
-This repository serves as the official source of record for configuration, documentation, and integration testing related to MantisHub within the LevitonCorporate GitHub organization.
-
----
-
-## Purpose
-
-The objectives of this repository are to:
-
-1. Document MantisHub configuration and workflows.
-2. Validate GitHub Source Integration with MantisHub.
-3. Demonstrate commit-to-issue traceability.
-4. Maintain documentation for internal governance and operational transparency.
+This repository serves as the official source of record for MantisHub configuration and integration documentation within the LevitonCorporate GitHub organization.
 
 ---
 
@@ -29,51 +17,34 @@ The objectives of this repository are to:
 
 This repository is connected to MantisHub using the Source Integration plugin.
 
-Integration capabilities include:
+Integration capabilities:
 
-* Importing commits into MantisHub
-* Linking commits to issues via issue ID references
-* Optional automatic issue status transitions based on commit keywords
+- Importing commits into MantisHub
+- Linking commits to issues via issue references
+- Optional automatic issue state transitions
 
 ### Commit Reference Format
 
-To link a commit to a Mantis issue, use one of the following formats in the commit message:
+To link a commit to a Mantis issue, include the issue ID in the commit message:
 
-```
-#123
 Fixes #123
 Resolves #123
 Refs #123
-```
+#123
 
 Example:
 
-```
 Fixes #432111 - Updated documentation workflow
-```
 
 ---
 
-## Branch Strategy
+## Primary Branch
 
-Primary branch:
-
-```
 main
-```
-
-Additional branches may be used for:
-
-* Documentation updates
-* Workflow configuration changes
-* Controlled integration testing
 
 ---
 
 ## Governance
 
-All changes to this repository should:
-
-* Reference a MantisHub issue when applicable
-* Follow internal documentation standards
-* Support traceability between GitHub commits and MantisHub tickets
+All commits should reference a Mantis issue when applicable to maintain traceability between GitHub and MantisHub.
+EOF
