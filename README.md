@@ -77,6 +77,3 @@ All changes to this repository should:
 * Reference a MantisHub issue when applicable
 * Follow internal documentation standards
 * Support traceability between GitHub commits and MantisHub tickets
-
----
-
