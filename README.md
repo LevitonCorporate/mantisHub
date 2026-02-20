@@ -78,3 +78,5 @@ All changes to this repository should:
 * Follow internal documentation standards
 * Support traceability between GitHub commits and MantisHub tickets
 
+---
+
